@@ -43,6 +43,8 @@
     "apps/*",
     "libs/shared/core",
     "libs/shared",
-    "libs/shared/helpers"
+    "libs/shared/helpers",
+    "libs/user/authentication",
+    "libs/user/blog-user"
   ]
 }
