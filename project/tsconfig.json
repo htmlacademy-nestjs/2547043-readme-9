@@ -4,28 +4,25 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/user-e2e"
-    },
-    {
       "path": "./apps/user"
-    },
-    {
-      "path": "./apps/blog-e2e"
     },
     {
       "path": "./apps/blog"
     },
     {
-      "path": "./apps/notify-e2e"
-    },
-    {
       "path": "./apps/notify"
     },
     {
-      "path": "./apps/api-e2e"
+      "path": "./apps/api"
     },
     {
-      "path": "./apps/api"
+      "path": "./libs/shared/core"
+    },
+    {
+      "path": "./libs/shared"
+    },
+    {
+      "path": "./libs/shared/helpers"
     }
   ]
 }
