@@ -1,1 +1,1 @@
-export * from './lib/data-access.js';
+export { BaseMemoryRepository }  from './repository/base-memory.repository.js';
