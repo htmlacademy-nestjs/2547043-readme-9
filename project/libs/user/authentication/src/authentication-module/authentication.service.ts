@@ -11,12 +11,10 @@ export class AuthenticationService {
     private readonly blogUserRepository: BlogUserRepository
   ) {}
 
-  public async register(dto: CreateUserDto) {
+  public async register(dto: CreateUserDto): Promise<BlogUserEntity> {
     const {email, name, password} = dto;
 
-    const blogUser = {
-      email, name, avatar: '', passwordHash: ''
-    };
+    const blogUser = { email, name, avatar: '', passwordHash: '' };
 
     const existUser = await this.blogUserRepository.findByEmail(email);
 
@@ -27,8 +25,10 @@ export class AuthenticationService {
     const userEntity = await new BlogUserEntity(blogUser)
       .setPassword(password)
 
-    return this.blogUserRepository
+      this.blogUserRepository
       .save(userEntity);
+
+    return userEntity;
   }
 
   public async verifyUser(dto: LoginUserDto) {
