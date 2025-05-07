@@ -9,6 +9,9 @@
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.6.0",
+    "bcrypt": "5.1.1",
+    "class-transformer": "^0.5.1",
+    "dayjs": "^1.11.13",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0"
   },
@@ -27,9 +30,11 @@
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@types/bcrypt": "5.0.2",
     "@types/node": "~18.16.9",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^10.0.0",
+    "jsonc-eslint-parser": "^2.1.0",
     "nx": "20.8.1",
     "prettier": "^2.6.2",
     "tslib": "^2.3.0",
@@ -39,7 +44,11 @@
   },
   "workspaces": [
     "apps/*",
-    "apps",
-    "apps-e2e"
+    "libs/shared/core",
+    "libs/shared",
+    "libs/shared/helpers",
+    "libs/user/authentication",
+    "libs/user/blog-user",
+    "libs/shared/data-access"
   ]
 }

@@ -7,22 +7,28 @@
       "path": "./apps/user"
     },
     {
-      "path": "./apps/blog-e2e"
-    },
-    {
       "path": "./apps/blog"
-    },
-    {
-      "path": "./apps/notify-e2e"
     },
     {
       "path": "./apps/notify"
     },
     {
-      "path": "./apps/api-e2e"
+      "path": "./apps/api"
     },
     {
-      "path": "./apps/api"
+      "path": "./libs/shared/core"
+    },
+    {
+      "path": "./libs/shared/helpers"
+    },
+    {
+      "path": "./libs/user/authentication"
+    },
+    {
+      "path": "./libs/user/blog-user"
+    },
+    {
+      "path": "./libs/shared/data-access"
     }
   ]
 }
